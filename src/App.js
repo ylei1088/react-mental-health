@@ -12,10 +12,6 @@ import ViewLanternResults from './pages/ViewLanterResults';
 
 // functional component, currently no state
 function App() {
-  // normal javascript
-  // const name = "IAM Teams Mental Health";
-
-
   // returns html & js => "JSX"
   return (
     <div className="App">
@@ -42,6 +38,7 @@ function App() {
         <Route path='/home/view/:id' component={ViewLantern} />
         <Route path='/home/view/:id/results' component={ViewLanternResults} />
 
+        {/* ERROR Handling */}
         <Route >
           <h1>Error</h1>
           <p>Route/Page does not exist</p>

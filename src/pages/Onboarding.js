@@ -3,10 +3,10 @@ import { Link} from 'react-router-dom'
 
 export default function Onboarding() {
 	return (
-		<div>
+		<main className='onboarding__main'>
 			<h1>Welcome</h1>
 			<button type='button'>Get Started</button>
 			<Link to='/login'>Login</Link>
-		</div>
+		</main>
 	)
 }
