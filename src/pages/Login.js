@@ -1,17 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
-// locals
-import useForm from '../hooks/useForm';
-import validateLogin from '../utils/validateLogin';
 
-// can be reshaped for any forms
-const INITIAL_STATE = {
-  email: '',
-  password: '',
-};
-
+// form validation
 const LoginSchema = Yup.object().shape({
   email: Yup.string().email('Invalid email').required('Required'),
   password: Yup.string()
@@ -21,15 +13,21 @@ const LoginSchema = Yup.object().shape({
 });
 
 export default function Login() {
+  const history = useHistory();
   return (
     <main className="login__page">
       <h1>Login</h1>
       <img src="https://picsum.photos/id/1011/250/250" alt="woman on boat" />
       <Formik
-        initialValues={INITIAL_STATE}
+        initialValues={{
+          email: '',
+          password: '',
+        }}
         validationSchema={LoginSchema}
         onSubmit={(values) => {
           console.log(values);
+          // after login success, send user to home
+          history.push('/home');
         }}
       >
         {({ errors, touched }) => (
@@ -44,7 +42,7 @@ export default function Login() {
                 className={errors.email && 'error__input'}
               />
               {errors.email && touched.email ? (
-                <p className="error_text">{errors.email}</p>
+                <p className="error__text">{errors.email}</p>
               ) : null}
             </label>
             <label htmlFor="password">
@@ -56,8 +54,8 @@ export default function Login() {
                 placeholder="**********"
                 className={errors.password && 'error__input'}
               />
-              {errors.email && touched.email ? (
-                <p className="error_text">{errors.email}</p>
+              {errors.password && touched.password ? (
+                <p className="error__text">{errors.password}</p>
               ) : null}
             </label>
             <Link to="/forgot" className="forgot__pass">

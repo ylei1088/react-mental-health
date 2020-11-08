@@ -26,7 +26,11 @@
                 flex-direction: column;
                 justify-content: space-between;
                 width: 50%;
+                height: auto;
                 padding-right: 2rem;
+                h3 {
+                    margin-top: 0;
+                }
             }
             .step__right {
                 width: 50%;

@@ -13,6 +13,7 @@ import ViewLantern from './pages/ViewLantern';
 import ViewLanternResults from './pages/ViewLanterResults';
 import Footer from './components/Footer';
 import Team from './pages/Team';
+import Forgot from './pages/Forgot';
 
 // functional component, currently no state
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <Route exact path="/" component={Onboarding} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
-        <Route path="/forgot" component={Register} />
+        <Route path="/forgot" component={Forgot} />
         <Route path="/account" component={Account} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/team" component={Team} />
