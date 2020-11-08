@@ -1,0 +1,49 @@
+.onboarding__main {
+    .step__container,
+    .home__hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home__hero {
+        padding: 2rem 0;
+        align-items: center;
+
+        h2 {
+            max-width: 30rem;
+            font-weight: 400;
+        }
+    }
+
+    .home__steps {
+        width: 100%;
+
+        .step__container {
+            margin: 4rem 0;
+            .step__left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                height: auto;
+                padding-right: 2rem;
+                h3 {
+                    margin-top: 0;
+                }
+            }
+            .step__right {
+                width: 50%;
+            }
+            .subtitle {
+                color: #a0aec0;
+            }
+        }
+
+        .step__container:nth-child(even) .step__left {
+            order: 1;
+            padding-right: 0;
+            padding-left: 2rem;
+        }
+    }
+}
