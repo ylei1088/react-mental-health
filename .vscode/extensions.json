@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "dsznajder.es7-react-js-snippets",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "CoenraadS.bracket-pair-colorizer"
+    ]
+}

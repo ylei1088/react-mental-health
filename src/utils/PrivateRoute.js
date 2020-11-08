@@ -1,13 +1,14 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-export default function PrivateRoutes({ children,isLogged, ...rest }) {
-
+// eslint-disable-next-line react/prop-types
+export default function PrivateRoutes({ children, isLogged, ...rest }) {
   return (
     <Route
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...rest}
       render={({ location }) =>
-			isLogged ? (
+        isLogged ? (
           children
         ) : (
           <Redirect
