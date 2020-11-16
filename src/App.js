@@ -28,9 +28,10 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/forgot" component={Forgot} />
+        <Route exact path="/team" component={Team} />
+        {/* needs alt navigation */}
         <Route path="/account" component={Account} />
         <Route exact path="/home" component={Home} />
-        <Route exact path="/team" component={Team} />
         <Route path="/home/create" component={CreateMain} />
         <Route path="/home/view/:id" component={ViewLantern} />
         <Route path="/home/view/:id/results" component={ViewLanternResults} />
