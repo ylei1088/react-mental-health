@@ -17,7 +17,11 @@ export default function Login() {
   return (
     <main className="login__page">
       <h1>Login</h1>
-      <img src="https://picsum.photos/id/1011/250/250" alt="woman on boat" />
+      <img
+        src="https://picsum.photos/id/1011/250/250"
+        alt="woman on boat"
+        height="250"
+      />
       <Formik
         initialValues={{
           email: '',

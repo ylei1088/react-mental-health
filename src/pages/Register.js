@@ -21,7 +21,11 @@ export default function Register() {
   return (
     <main className="register__page">
       <h1>Register</h1>
-      <img src="https://picsum.photos/id/1042/250/250" alt="star scape wavey" />
+      <img
+        src="https://picsum.photos/id/1042/250/250"
+        alt="star scape wavey"
+        height="250"
+      />
       <Formik
         // set initial form values
         initialValues={{

@@ -6,7 +6,11 @@ export default function Forgot() {
   return (
     <main className="reset__page">
       <h1>Reset Password:</h1>
-      <img src="https://picsum.photos/250/250" alt="woman on boat" />
+      <img
+        src="https://picsum.photos/250/250"
+        alt="woman on boat"
+        height="250"
+      />
       <Formik
         initialValues={{ email: '' }}
         onSubmit={(values) => {
