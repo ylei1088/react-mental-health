@@ -13,7 +13,7 @@ export default function Team() {
           <b>Dev Team</b>
         </li>
         <li>Mark A. - Lead Developer</li>
-        <li>Riley S. - Frontend Developer</li>
+        <li>Riley J. - Frontend Developer</li>
         <li>Tyler M. - Frontend Developer</li>
         <li>
           <b>Design Team</b>
