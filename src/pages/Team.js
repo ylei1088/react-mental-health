@@ -12,13 +12,13 @@ export default function Team() {
         <li>
           <b>Dev Team</b>
         </li>
-        <li>Mark A. - Lead Developer</li>
+        <li>Mark A. - Frontend Developer</li>
         <li>Riley J. - Frontend Developer</li>
         <li>Tyler M. - Frontend Developer</li>
         <li>
           <b>Design Team</b>
         </li>
-        <li>Vicki L. - Lead Designer</li>
+        <li>Vicki L. - UI Designer</li>
         <li>Artur C. - UI Designer</li>
         <li>Matt B. - UI Designer</li>
         <li>Erin G. - UI Designer</li>
