@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 // locals
-import { data } from '../dummy/data';
+import { data as lanterns } from '../dummy/data';
 import Lantern from '../components/Lantern';
 
 export default function Home() {
-  const [lanterns, setLanterns] = useState([...data]);
+  // const [lanterns] = useState([...data]);
   // console.log(data);
   const winWidth = window.innerWidth / 10;
   const winHeight = window.innerHeight / 10;
