@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+// locals
+import { data } from '../dummy/data';
+import Lantern from '../components/Lantern';
 
 export default function Home() {
+  const [lanterns, setLanterns] = useState([...data]);
+  // console.log(data);
+
   return (
-    <div>
-      <main>
-        <div className="">
-          {/* notice, JS is in curly brackets */}
-          <h1>HOME</h1>
-          {/* we could also destructure name from within props => const {name} = props */}
-          <p>I am the main div!</p>
-        </div>
-      </main>
-    </div>
+    <main className="home__dashboard">
+      <div className="home__ui">
+        {/* notice, JS is in curly brackets */}
+        <h1>HOME</h1>
+      </div>
+      <div className="home__lanterns">
+        {lanterns.map((lantern) => (
+          <Lantern key={lantern.id} data={lantern} />
+        ))}
+      </div>
+    </main>
   );
 }
