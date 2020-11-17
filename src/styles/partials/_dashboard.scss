@@ -2,9 +2,10 @@
 	display: flex;
 	position: relative;
 	width: 100%;
-	height: 85vh;
+	height: 80vh;
+	padding-left: -4rem !important;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
 
 	.home__ui {
 		z-index: 9;
@@ -12,9 +13,9 @@
 
 	.home__lanterns {
 		display: block;
+		position: relative;
 		width: 100%;
 		height: 100%;
-		position: relative;
 		z-index: 0;
 	}
 }

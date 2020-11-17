@@ -5,6 +5,8 @@ import { Link, useLocation } from 'react-router-dom';
 export default function Header() {
   // get the pathname from the url bar
   const { pathname } = useLocation();
+  // console.log(pathname);
+
   // split the pathname string by "/" returns an array of strings
   const currentPage = pathname.split('/');
   // pages where we need to render dashboard,account,logout options

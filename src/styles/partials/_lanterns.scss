@@ -1,17 +1,21 @@
 .lantern__main {
 	display: block;
-	position: relative;
+	position: absolute;
 	width: 200px;
 	height: 300px;
 	object-fit: cover;
-	animation: lanternMove 90s ease-in-out infinite;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	bottom: auto;
+	animation: lanternMove 75s ease-in-out infinite;
 }
 
 @keyframes lanternMove {
-	0%{
-		transform: translateY(0%);
+	0%,100%{
+		transform: translateY(125%);
 	}
-	75%{
-		transform: translateY(90%);
+	50%{
+		transform: translateY(-20%);
 	}
 }
