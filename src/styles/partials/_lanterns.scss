@@ -1,6 +1,17 @@
 .lantern__main {
 	display: block;
+	position: relative;
 	width: 200px;
 	height: 300px;
 	object-fit: cover;
+	animation: lanternMove 90s ease-in-out infinite;
+}
+
+@keyframes lanternMove {
+	0%{
+		transform: translateY(0%);
+	}
+	75%{
+		transform: translateY(90%);
+	}
 }
