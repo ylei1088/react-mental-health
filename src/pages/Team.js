@@ -1,13 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Team() {
   return (
     <main className="team__page">
-      <h1>
-        IAM Teams 260
-        <br /> Fall 2020 Team:
-      </h1>
-      <h3>Mental Health App</h3>
+      <Link to="/">How it works</Link>
+      <h1>Creators:</h1>
       <ul>
         <li>
           <b>Dev Team</b>

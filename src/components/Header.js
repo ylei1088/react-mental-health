@@ -6,8 +6,7 @@ export default function Header() {
     <header className="site__header">
       <div className="header__inner">
         <Link to="/">Home</Link>
-        <Link to="/login">Create Account</Link>
-        <Link to="/team">About Us</Link>
+        <Link to="/about">About</Link>
       </div>
     </header>
   );

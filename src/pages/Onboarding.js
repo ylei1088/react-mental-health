@@ -24,7 +24,6 @@ export default function Onboarding() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
             </p>
-            <Link to="/login">Get Started</Link>
           </div>
           <div className="step__right">
             <img
@@ -45,7 +44,6 @@ export default function Onboarding() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
             </p>
-            <Link to="/login">Get Started</Link>
           </div>
           <div className="step__right">
             <img
@@ -66,7 +64,6 @@ export default function Onboarding() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
             </p>
-            <Link to="/login">Get Started</Link>
           </div>
           <div className="step__right">
             <img
@@ -74,6 +71,8 @@ export default function Onboarding() {
               alt="placeholder"
             />
           </div>
+
+          <Link to="/home">Skip</Link>
         </div>
       </div>
     </main>
