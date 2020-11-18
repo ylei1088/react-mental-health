@@ -17,10 +17,10 @@ export default function Home() {
 
   return (
     <main className="home__dashboard">
-      <Link to="/home/create">Create</Link>
       <div className="home__ui">
         {/* notice, JS is in curly brackets */}
         <h1>HOME</h1>
+        <Link to="/home/create">Create Lantern</Link>
       </div>
       <div className="home__lanterns">
         {lanterns.map((lantern, idx) => {

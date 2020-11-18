@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Team() {
   return (
     <main className="team__page">
-      <Link to="/">How it works</Link>
+      {/* <Link to="/">How it works</Link> */}
       <h1>Creators:</h1>
       <ul>
         <li>

@@ -16,8 +16,6 @@ function App() {
   return (
     <div className="App container">
       <Header />
-      {/* JSX, notice pascal case on tags */}
-      {/* this lets us handle navigation */}
       <Switch>
         <Route exact path="/" component={Onboarding} />
         <Route exact path="/home" component={Home} />
