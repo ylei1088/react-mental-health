@@ -9,10 +9,21 @@ export default function CreateMain() {
   }
   return (
     <div className="create__main">
-      <h1>Create Page {pageIndex}</h1>
-      <div className="">
-        <p>whats on your mind</p>
+      <h1>What's on your mind?</h1>
 
+      <form className="create__main__form">
+        <textarea
+          name="lantern_body"
+          cols="30"
+          rows="10"
+          placeholder="How's your day going?"
+        />
+        <button className="btn--next" type="submit">
+          Next
+        </button>
+      </form>
+
+      <h6 className="no-show">
         {pageIndex >= 10 ? 'greater than 10' : 'less than 10'}
         {pageIndex <= 10 ? (
           <FirstComponent
@@ -21,11 +32,7 @@ export default function CreateMain() {
             handleCount={handleCount}
           />
         ) : null}
-        <form>
-          <textarea name="lantern_body" cols="30" rows="10" />
-          <button type="submit">Next</button>
-        </form>
-      </div>
+      </h6>
     </div>
   );
 }
