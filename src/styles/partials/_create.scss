@@ -1,0 +1,70 @@
+.create__main {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+
+  //form
+  &__form {
+    margin-bottom: 30px;
+
+    textarea {
+      min-width: 450px;
+      min-height: 350px;
+      border-radius: 30px;
+      border-color: #e1e1e1;
+      padding: 30px;
+    }
+  }
+
+  // lanterns
+  // max-height: 450px;
+
+  //colors
+  .pickLanternColor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+
+    $colors: red, orange, yellow, green, blue;
+
+    @for $i from 1 through length($colors) {
+      li:nth-child(#{length($colors)}n + #{$i}) {
+        background: lighten(nth($colors, $i), 20%);
+      }
+    }
+    &--item {
+      width: 85px;
+      height: 85px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .btn--next {
+    margin: 0 auto;
+    width: min-content;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: inherit;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+h1 {
+  font-size: 31px;
+  font-weight: 400;
+}
+
+.no-show {
+  display: none;
+}
