@@ -15,7 +15,7 @@ export default function Onboarding() {
         {/* home steps will look like this */}
         <div className="step__container">
           <div className="step__left">
-            <h3>01/ Create your lanterns</h3>
+            <h3>01/ A safe space to share </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
@@ -35,7 +35,7 @@ export default function Onboarding() {
         {/* home steps will look like this */}
         <div className="step__container">
           <div className="step__left">
-            <h3>02/ A safe place to share and view</h3>
+            <h3>02/Create a lantern</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
@@ -55,7 +55,7 @@ export default function Onboarding() {
         {/* home steps will look like this */}
         <div className="step__container">
           <div className="step__left">
-            <h3>03/ View feedback before you lantern disapears</h3>
+            <h3>03/ Send your Lantern</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
@@ -71,8 +71,28 @@ export default function Onboarding() {
               alt="placeholder"
             />
           </div>
-
-          <Link to="/home">Skip</Link>
+        </div>
+        <div className="step__container">
+          <div className="step__left">
+            <h3>04/The Team</h3>
+            <ul>
+              <li>Riley Jakusik - Project Manager / UX Engineer</li>
+              <li>Mark</li>
+              <li>Tyler</li>
+              <li>Vicki</li>
+              <li>Artur</li>
+              <li>Matt</li>
+              <li>Erin</li>
+              <li>Mackenzie</li>
+              <li>Justin</li>
+            </ul>
+          </div>
+          <div className="step__right">
+            <img
+              src="https://picsum.photos/seed/picsum2/640/365"
+              alt="placeholder"
+            />
+          </div>
         </div>
       </div>
     </main>

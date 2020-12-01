@@ -8,7 +8,6 @@ import Home from './pages/Home';
 import CreateMain from './pages/CreateMain';
 import ViewLantern from './pages/ViewLantern';
 import Footer from './components/Footer';
-import Team from './pages/Team';
 
 // functional component, currently no state
 function App() {
@@ -17,9 +16,8 @@ function App() {
     <div className="App container">
       <Header />
       <Switch>
-        <Route exact path="/" component={Onboarding} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/about" component={Team} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={Onboarding} />
         <Route path="/home/create" component={CreateMain} />
         <Route path="/home/view/:id" component={ViewLantern} />
 
