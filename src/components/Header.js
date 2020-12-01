@@ -17,7 +17,6 @@ export default function Header() {
       <div className="header__inner">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/home">Dashboard</Link>
       </div>
     </header>
   );
